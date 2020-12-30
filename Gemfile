@@ -26,8 +26,13 @@ gem 'bootsnap', '>= 1.4.4', require: false
 # gem 'rack-cors'
 
 group :development, :test do
+gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+end
+
+group :test do
+  gem 'capybara', '~> 3.34'
 end
 
 group :development do
